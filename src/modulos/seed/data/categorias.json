@@ -1,0 +1,28 @@
+[
+    {
+      "catid": "C001",
+      "nombre": "R",
+      "desc": "Moto deportiva."
+    },
+    {
+      "catid": "C002",
+      "nombre": "Nacked",
+      "desc": "Moto deportiva con un estilo de calle."
+    },
+    {
+      "catid": "C003",
+      "nombre": "Trail",
+      "desc": "Moto versátil cómoda tanto para campo como para carretera."
+    },
+    {
+      "catid": "C004",
+      "nombre": "Custom",
+      "desc": "Moto de carretera cómoda con estilo motero."
+    },
+    {
+      "catid": "C005",
+      "nombre": "Enduro",
+      "desc": "Moto de campo."
+    }
+  ]
+  

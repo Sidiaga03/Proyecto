@@ -1,0 +1,27 @@
+[
+	{
+		"codigoGama" : "Aromaticas",
+		"descripcion" : "Plantas aromáticas",
+		"imagen" : "aromaticas.png"
+	},
+	{
+		"codigoGama" : "Frutales",
+		"descripcion" : "Árboles pequeños de producción frutal",
+		"imagen" : "frutales.png"
+	},
+	{
+		"codigoGama" : "Herbaceas",
+		"descripcion" : "Plantas para jardin decorativas",
+		"imagen" : "herbaceas.png"
+	},
+	{
+		"codigoGama" : "Herramientas",
+		"descripcion" : "Herramientas para todo tipo de acción",
+		"imagen" : "herramientas.png"
+	},
+	{
+		"codigoGama" : "Ornamentales",
+		"descripcion" : "Plantas vistosas para la decoración del jardín",
+		"imagen" : "ornamentales.png"
+	}
+]
