@@ -17,17 +17,352 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to bottom, #7AC74F, #fa0fa0ab);
+}
+
+#principal{
+  background-image: url(../../public/fondo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: black;
+}
+
+h1{
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 98%;
+  background-color: rgba(192, 192, 192, 0.5);
+  font-size: 23px;
+}
+
+h2{
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 98%;
+  background-color: rgba(192, 192, 192, 0.5);
+  font-size: 20px;
+}
+
+p{
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 98%;
+  background-color: rgba(192, 192, 192, 0.5);
+  font-size: 18px;
+}
+
+button{
+  background-color: darkblue;
+}
+
+#productos{
+  background-image: url(../../public/fondoHerramientas.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150vh;
+}
+
+#gamas{
+  background-image: url(../../public/fondoGama.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+#Adminis{
+  margin-top: 25px;
+}
+
+.tarjeta{
+  background-image: url('https://as1.ftcdn.net/jpg/01/93/91/96/220_F_193919655_JYOhhGqiFmMRSkA7RP6kaFhDp93pqJQz.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 25px;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+nav.flex.z-40.w-full.h-auto.items-center.justify-center.data-\[menu-open\=true\]\:border-none.sticky.top-0.inset-x-0.backdrop-blur-lg.data-\[menu-open\=true\]\:backdrop-blur-xl.backdrop-saturate-150.bg-background\/70{
+  background-color: #18e239ab !important;
+  color: black;
+  height: 90px;
+  font-size: larger;
+  font-size: 20px;
+}
+
+.logo{
+  width: 90px;
+  margin-right: 10px;
+}
+
+#consejo{
+  width: 40%;
+  margin-left: 28%;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+#proveedores{
+  margin-top: 20px;
+}
+
+.figurecartel {
+  max-width: calc(100% - 40px); /* Ten en cuenta el margen */
+  margin: 20px;
+}
+
+.cartelimg {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Para evitar espacio adicional debajo de la imagen */
+}
+
+.tarjetilla {
+  height: 60%;
+  width: 70%;
+  margin-top: 60px;
+  margin-left: 37px;
+}
+
+.tarjetilla:hover {
+  transform: translateX(25px);
+  transition: transform 8s ease-out;
+  filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.863));
+}
+
+.tarjetilla:not(:hover){
+  transition: transform 20s ease-out;
+}
+
+.boton {
+  color: white;
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  width: 300px;
+}
+
+.sct{
+  margin-left: 40px;
+}
+.checkboxs{
+  /* background-color: red; */
+  display: flex;
+  flex-flow: row-nowrap;
+  width: 90%;
+  justify-content: space-evenly;
+  color: white;
+  background-color: rgba(192, 192, 192, 0.5);
+  margin-left: 27px;
+  padding: 10px;
+  padding-top: 30px;
+}
+.checkboxs label{
+  display: flex;
+}
+.listado{
+  background-color: blue;
+}
+.checktxt{
+  display: block;
+  padding-left: 10px;
+  font-size: 17px;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.new {
+  padding: 50px;
+}
+
+#administracion{
+  text-align: center;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content:'';
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 2px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.mainlogin {
+  background-color: red;
+}
+
+
+.button-circle {
+  width: 40px; /* Ajusta el ancho del botón */
+  height: 40px; /* Ajusta la altura del botón */
+  border-radius: 50%; /* Establece el radio de borde para hacer un círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  background-color: #10B981; /* Cambia al color verde deseado */
+  border: none;
+}
+
+.button-circle svg {
+  fill: white; /* Color de relleno del SVG */
+  width: 60%; /* Ajusta el tamaño del SVG dentro del botón */
+  height: 60%; /* Ajusta el tamaño del SVG dentro del botón */
+}
+
+.loginpagina {
+  background-image: url("https://blog.homedepot.com.mx/wp-content/uploads/2019/10/Portada_Principiantes_01.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.formulogin {
+  background-color: rgba(62, 166, 207, 0.856);
+  border-radius: 20px;
+  padding: 20px; 
+  padding-right: 20px;
+  margin-right: 20px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  filter: blur(2);
+  color: black;
+}
+
+.formuregister{
+  background-color: rgba(62, 166, 207, 0.856);
+  border-radius: 20px;
+  padding: 20px; 
+  padding-right: 20px;
+  margin-right: 20px;
+  margin-top: 55px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center;
+  filter: blur(2);
+  color: black;
+}
+
+.fondocontainer {
+  background-color: #000000;
+}
+
+.formularioadd {
+  height: 500px;
+  width: 800px;
+
+}
+
+.product-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.product-details {
+  flex: 0 0 50%;
+  padding: 0 20px;
+}
+
+.product-title {
+  font-size: 36px;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.product-model {
+  font-size: 24px;
+  margin: 0 0 20px;
+  color: #666;
+}
+
+.product-description {
+  font-size: 16px;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.product-price {
+  font-size: 30px;
+  margin: 0 0 30px;
+  color: #333;
+}
+
+.buy-now-btn {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: orangered;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #0056b3;
+}
+
+.product-image {
+  flex: 45%;
+  max-width: 45%;
+}
+
+.product-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
